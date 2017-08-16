@@ -68,5 +68,9 @@ contract RSVPToken is StandardToken {
         }
     }
     
+      function IsAdmitted(address _owner) constant returns (bool) {
+        return admitted[_owner];
+    }
+    
     
 }
